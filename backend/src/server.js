@@ -1,10 +1,8 @@
 import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
-
 import { connectDB } from "./config/db.js";
 import serviceRoutes from "./routes/serviceRoutes.js";
-
 import { notFound } from "./middleware/notFoundMiddleware.js";
 import { errorHandler } from "./middleware/errorMiddleware.js";
 
